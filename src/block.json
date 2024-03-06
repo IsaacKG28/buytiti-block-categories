@@ -1,0 +1,41 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "buytiti/buytiti-bloque-categorias",
+    "version": "1.0.0",
+    "title": "Buytiti - bloque-categories",
+    "category": "widgets",
+    "icon": "list-view",
+    "description": "Este plugin agrega la estructura de un bloque que tiene las categorias en la página",
+    "example": {},
+    "supports": {
+        "html": false
+    },
+    "textdomain": "buytiti-bloque-categorias",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./view.js",
+    "attributes": {
+        "imagenes": {
+            "type": "array",
+            "default": [],
+            "source": "query",
+            "selector": "img",
+            "query": {
+                "url": {
+                    "source": "attribute",
+                    "attribute": "src"
+                }
+            }
+        },
+        "textos": {
+            "type": "array",
+            "default": ["ELECTRÓNICA", "ENTRETENIMIENTO", "HOGAR", "SALUD Y BELLEZA", "PAPELERÍA"]
+        },
+        "urls": {
+            "type": "array",
+            "default": ["", "", "", "", ""]
+        }
+    }
+}
