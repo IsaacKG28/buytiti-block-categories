@@ -10,7 +10,7 @@ export default function save({ attributes }) {
                     <div className="contenedor-circular">
                         <img key={index} src={imagen.url} style={{ margin: '10px' }} className={`imagenind-${index}`} />
                     </div>
-                    <p>{textos[index]}</p>
+                    <p className={`texto-${index}`}>{textos[index]}</p> {/* Aquí agregamos la clase al elemento p */}
                     <a href={urls[index]} className="components-button">VER MÁS</a>
                 </div>
             ))}

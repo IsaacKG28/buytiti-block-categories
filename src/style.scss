@@ -1,115 +1,170 @@
+// style.scss
 .wp-block-buytiti-buytiti-bloque-categorias {
     display: flex;
-	height: 330px;
+    height: 330px;
     justify-content: center;
+    margin-bottom: 15px !important;
     .imagen-contenedor {
-		flex-grow: 1; 
-		width: 215px;
-		.contenedor-circular{
-		display: flex;
-		width: 120px; 
-		height: 120px; 
-		margin-top: 60px;
-		border-radius: 50%;
-		background-color: white;
-		align-items: center;
-		overflow: visible;
+        flex-grow: 1; 
+        width: 215px;
+        .contenedor-circular{
+            display: flex;
+            width: 120px; 
+            height: 120px; 
+            margin-top: 60px;
+            border-radius: 50%;
+            background-color: white;
+            align-items: center;
+            overflow: visible;
+        }
 
-		}
-
-		.imagenind-0 {
-			margin: 10px;
-			margin-left: 1px !important;
-			object-fit: contain !important;
-			transition: transform 0.7s ease; /* Añade una transición suave al efecto de zoom */
+        .imagenind-0 {
+            margin: 10px;
+            margin-left: 1px !important;
+            object-fit: contain !important;
+            transition: transform 0.7s ease; /* Añade una transición suave al efecto de zoom */
             position: relative; /* Añade esta línea */
-		}
-		.imagenind-1 {
-			margin: 10px;
-			margin-left: -5px !important;
-			object-fit: contain !important;
-			transition: transform 0.7s ease; /* Añade una transición suave al efecto de zoom */
+        }
+        .imagenind-1 {
+            margin: 10px;
+            margin-left: -5px !important;
+            object-fit: contain !important;
+            transition: transform 0.7s ease; /* Añade una transición suave al efecto de zoom */
             position: relative; /* Añade esta línea */
-		}
-		.imagenind-2 {
-			margin-bottom: 40px !important;
-			height: 130px;
-			width: 120px;
-			margin: 10px;
-			object-fit: contain !important;
-			transition: transform 0.7s ease; /* Añade una transición suave al efecto de zoom */
+        }
+        .imagenind-2 {
+            margin-bottom: 40px !important;
+            height: 130px;
+            width: 120px;
+            margin: 10px;
+            object-fit: contain !important;
+            transition: transform 0.7s ease; /* Añade una transición suave al efecto de zoom */
             position: relative; /* Añade esta línea */
-		}
-		.imagenind-3 {
-			margin: 10px;
-			object-fit: contain !important;
-			transition: transform 0.7s ease; /* Añade una transición suave al efecto de zoom */
+        }
+        .imagenind-3 {
+            margin: 10px;
+            object-fit: contain !important;
+            transition: transform 0.7s ease; /* Añade una transición suave al efecto de zoom */
             position: relative; /* Añade esta línea */
-			margin-left: -10px !important;
-
-		}
-		.imagenind-4 {
-			object-fit: contain !important;
-			transition: transform 0.7s ease !important;
-			position: relative !important;
-			width: 100px;
-			height: 130px;
-			margin-bottom: 23px !important;
-		}
-		border-radius: 27px; /* Ajusta este valor para cambiar cuánto quieres redondear las esquinas */
-		display: flex;
+            margin-left: -10px !important;
+        }
+        .imagenind-4 {
+            object-fit: contain !important;
+            transition: transform 0.7s ease !important;
+            position: relative !important;
+            width: 100px;
+            height: 130px;
+            margin-bottom: 23px !important;
+        }
+        border-radius: 27px; /* Ajusta este valor para cambiar cuánto quieres redondear las esquinas */
+        display: flex;
         flex-direction: column;
         align-items: center;
         margin: 15px;  /* Ajusta este valor al tamaño que prefieras */
 
-		.components-button {
-			background-color: rgb(253, 161, 12);
-			border-radius: 20px;
-			margin-top: -8px;
-			width: 85px;
-			height: 25px;
-			margin-bottom: 30px;
-			color: white;
-			font-size: 13px;
-			font-weight: bold;
-			text-align: center;
-			text-decoration: none;
-		}
-		
-		transition: transform 0.7s ease;
-		/* Define el efecto al pasar el cursor */
-		&:hover {
-			.imagenind-0{
-				transform-origin: bottom;
-				transform: scale(1.8); 
-				z-index: 2.6; /* Hace que la imagen sobresalga de los demás elementos */
-			}
-			.imagenind-1{
-				transform-origin: bottom;
-				transform: scale(1.8); 
-				z-index: 2.6; /* Hace que la imagen sobresalga de los demás elementos */
-			}
-			.imagenind-2{
-				transform-origin: bottom;
-				transform: scale(1.6); 
-				z-index: 2.6; /* Hace que la imagen sobresalga de los demás elementos */
-			}
-			.imagenind-3{
-				transform-origin: bottom;
-				transform: scale(2.1); 
-				z-index: 2.6; /* Hace que la imagen sobresalga de los demás elementos */
-			}
-			.imagenind-4{
-				transform-origin: bottom;
-				transform: scale(1.8); 
-				z-index: 2.6; /* Hace que la imagen sobresalga de los demás elementos */
-			}
-			/* Hace que el contenedor sea un poco más grande */
-			transform: scale(1.1);
-			/* Sobre sale de los demás */
-			z-index: 1;
-		}
+        .components-button {
+            background-color: rgb(253, 161, 12);
+            border-radius: 20px;
+            margin-top: -8px;
+            width: 85px;
+            height: 25px;
+            margin-bottom: 30px;
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        transition: transform 0.7s ease;
+        /* Define el efecto al pasar el cursor */
+        &:hover {
+            .imagenind-0{
+                transform-origin: bottom;
+                transform: scale(1.8); 
+                z-index: 2.6; /* Hace que la imagen sobresalga de los demás elementos */
+            }
+            .imagenind-1{
+                transform-origin: bottom;
+                transform: scale(1.8); 
+                z-index: 2.6; /* Hace que la imagen sobresalga de los demás elementos */
+            }
+            .imagenind-2{
+                transform-origin: bottom;
+                transform: scale(1.6); 
+                z-index: 2.6; /* Hace que la imagen sobresalga de los demás elementos */
+            }
+            .imagenind-3{
+                transform-origin: bottom;
+                transform: scale(2.1); 
+                z-index: 2.6; /* Hace que la imagen sobresalga de los demás elementos */
+            }
+            .imagenind-4{
+                transform-origin: bottom;
+                transform: scale(1.8); 
+                z-index: 2.6; /* Hace que la imagen sobresalga de los demás elementos */
+            }
+            /* Hace que el contenedor sea un poco más grande */
+            transform: scale(1.1);
+            z-index: 1;
+        }
     }
+}
+.fondo-0{
+    background-color: #45c0ef;
+}
+.fondo-1{
+    background-color: #ffb839;
+}
+.fondo-2{
+    background-color: #8cda7d;
+}
+.fondo-3{
+    background-color: #755ddb;
+}
+.fondo-4{
+    background-color: #ff99db;
+}
+.wp-block-buytiti-buytiti-bloque-categorias .texto-0 {
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 9px;
+}
+
+.wp-block-buytiti-buytiti-bloque-categorias .texto-1 {
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 9px;
+}
+.wp-block-buytiti-buytiti-bloque-categorias .texto-2 {
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 9px;
+}
+.wp-block-buytiti-buytiti-bloque-categorias .texto-3 {
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 9px;
+}
+.wp-block-buytiti-buytiti-bloque-categorias .texto-4 {
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 9px;
 }
 @media screen and (max-width: 600px) {
 	.wp-block-buytiti-buytiti-bloque-categorias {
@@ -141,9 +196,21 @@
 			margin-bottom: 15px !important;
 		  }
 	  }
-	}
-	p {
-	  font-size: 12px;
+	  .texto-0{
+		font-size: 12px;
+	  }
+	  .texto-1{
+		font-size: 12px;
+	  }
+	  .texto-2{
+		font-size: 12px;
+	  }
+	  .texto-3{
+		font-size: 12px;
+	  }
+	  .texto-4{
+		font-size: 12px;
+	  }
 	}
   }
   @media screen and (max-width: 900px) {
@@ -176,31 +243,20 @@
 			margin-bottom: 20px;
 		  }
 	  }
-	}
-	p {
-	  font-size: 12px;
+	  .texto-0{
+		font-size: 12px;
+	  }
+	  .texto-1{
+		font-size: 12px;
+	  }
+	  .texto-2{
+		font-size: 12px;
+	  }
+	  .texto-3{
+		font-size: 12px;
+	  }
+	  .texto-4{
+		font-size: 12px;
+	  }
 	}
   }
-.fondo-0{
-	background-color: #45c0ef;
-}
-.fondo-1{
-	background-color: #ffb839;
-}
-.fondo-2{
-	background-color: #8cda7d;
-}
-.fondo-3{
-	background-color: #755ddb;
-}
-.fondo-4{
-	background-color: #ff99db;
-}
-p {
-	font-weight: bold;
-	color: white ;
-	overflow: hidden; /* Añade esta línea */
-	text-overflow: ellipsis; /* Añade esta línea */
-	white-space: nowrap; /* Añade esta línea */
-	margin-top: 9px;
-}

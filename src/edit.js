@@ -48,9 +48,9 @@ export default function Edit( { attributes, setAttributes } ) {
             {imagenes.map((imagen, index) => (
                 <div key={index} className={`imagen-contenedor fondo-${index}`}>
                     <div className="contenedor-circular">
-                    <img key={index} src={imagen.url} style={{ margin: '10px' }} className={`imagenind-${index}`} />
+                        <img key={index} src={imagen.url} style={{ margin: '10px' }} className={`imagenind-${index}`} />
                     </div>
-                    <p>{textos[index]}</p>
+                    <p className={`texto-${index}`}>{textos[index]}</p>
                     <Button href={urls[index]}>VER MÁS</Button>
                 </div>
             ))}
