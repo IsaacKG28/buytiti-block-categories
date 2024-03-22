@@ -31,11 +31,11 @@
         },
         "textos": {
             "type": "array",
-            "default": ["ELECTRÓNICA", "ENTRETENIMIENTO", "HOGAR", "SALUD Y BELLEZA", "PAPELERÍA"]
+            "default": ["ELECTRÓNICA", "ENTRETENIMIENTO", "HOGAR", "SALUD Y BELLEZA", "PAPELERÍA", "NUEVO PRODUCTO"]
         },
         "urls": {
             "type": "array",
-            "default": ["", "", "", "", ""]
+            "default": ["", "", "", "", "", ""]
         }
     }
 }

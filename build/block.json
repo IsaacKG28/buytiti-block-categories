@@ -36,12 +36,14 @@
         "ENTRETENIMIENTO",
         "HOGAR",
         "SALUD Y BELLEZA",
-        "PAPELERÍA"
+        "PAPELERÍA",
+        "NUEVO PRODUCTO"
       ]
     },
     "urls": {
       "type": "array",
       "default": [
+        "",
         "",
         "",
         "",

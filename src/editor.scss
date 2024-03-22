@@ -16,48 +16,57 @@
           align-items: center;
       }
       .imagenind-0 {
-          margin: 10px;
-          margin-left: 1px !important;
-          object-fit: contain !important;
-          transition: transform 0.7s ease; 
-          position: relative; 
-          transform: scale(1.3);
+        margin-bottom: 20px !important;
+        margin-left: 10px !important;
+        object-fit: contain !important;
+        position: relative;
+        transform: scale(1.5);
+        transition: transform .7s ease;
       }
       .imagenind-1 {
-          margin: 10px;
-          margin-left: -5px !important;
-          object-fit: contain !important;
-          transition: transform 0.7s ease; 
-          position: relative; 
-          transform: scale(1.3);
+        margin-bottom: 30px !important;
+        margin-left: -3px !important;
+        object-fit: contain !important;
+        transform: scale(1.35);
+        transition: transform .7s ease;
       }
       .imagenind-2 {
-          margin-bottom: 40px !important;
-          height: 130px;
-          width: 120px;
-          margin: 10px;
-          object-fit: contain !important;
-          transition: transform 0.7s ease; 
-          position: relative;
-          transform: scale(1.3); 
+        height: 100%;
+        margin-bottom: 50px !important;
+        margin: 10px;
+        object-fit: contain !important;
+        position: relative;
+        transform: scale(1.45);
+        transition: transform .7s ease;
+        width: 100%;
+        margin-left: 2px !important;
       }
       .imagenind-3 {
-          margin: 10px;
-          object-fit: contain !important;
-          transition: transform 0.7s ease; 
-          position: relative; 
-          margin-left: -10px !important;
-          transform: scale(1.3);
+        margin-bottom: 40px !important;
+        object-fit: contain !important;
+        position: relative;
+        transform: scale(1.36) !important;
+        transition: transform .7s ease;
       }
       .imagenind-4 {
-          object-fit: contain !important;
-          transition: transform 0.7s ease !important;
-          position: relative !important;
-          width: 100px;
-          height: 130px;
-          margin-bottom: 23px !important;
-          transform: scale(1.3);
+        height: 100%;
+        margin-bottom: 40px !important;
+        object-fit: contain !important;
+        position: relative !important;
+        transform: scale(1.4);
+        transition: transform .7s ease !important;
+        width: 100%;
+        margin-left: -1px !important;
       }
+      .imagenind-5 {
+        object-fit: contain !important;
+        transition: transform 0.7s ease !important;
+        position: relative !important;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2px !important;
+        transform: scale(1.4);
+    }
       border-radius: 27px; 
       display: flex;
       flex-direction: column;
@@ -79,30 +88,35 @@
       transition: transform 0.7s ease;
       &:hover {
           .imagenind-0{
-              transform-origin: bottom;
+              transform-origin: center;
               transform: scale(1.8); 
               z-index: 2.6; 
           }
           .imagenind-1{
-              transform-origin: bottom;
+              transform-origin: center;
               transform: scale(1.8); 
               z-index: 2.6; 
           }
           .imagenind-2{
-              transform-origin: bottom;
-              transform: scale(1.6); 
+              transform-origin: center;
+              transform: scale(1.78) !important; 
               z-index: 2.6; 
           }
           .imagenind-3{
-              transform-origin: bottom;
-              transform: scale(1.6); 
-              z-index: 2; 
+              transform-origin: center;
+              transform: scale(1.72) !important; 
+              z-index: 2.5; 
           }
           .imagenind-4{
-              transform-origin: bottom;
+              transform-origin: center;
               transform: scale(1.8); 
               z-index: 2.6; 
           }
+          .imagenind-5{
+            transform-origin: center;
+            transform: scale(1.8); 
+            z-index: 2.6; 
+        }
           transform: scale(1.1);
           z-index: 1;
       }
@@ -123,6 +137,9 @@
 .fondo-4{
   background-color: #ff99db;
 }
+.fondo-5{
+  background-color: #ef7e28;
+}
 .wp-block-buytiti-buytiti-bloque-categorias .texto-0 {
 font-weight: bold;
 color: white;
@@ -135,34 +152,42 @@ margin-top: 10px;
 .wp-block-buytiti-buytiti-bloque-categorias .texto-1 {
   font-weight: bold;
   color: white;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-top: 9px;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 .wp-block-buytiti-buytiti-bloque-categorias .texto-2 {
   font-weight: bold;
   color: white;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-top: 9px;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 .wp-block-buytiti-buytiti-bloque-categorias .texto-3 {
   font-weight: bold;
   color: white;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-top: 9px;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 .wp-block-buytiti-buytiti-bloque-categorias .texto-4 {
   font-weight: bold;
   color: white;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-top: 9px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.wp-block-buytiti-buytiti-bloque-categorias .texto-5 {
+  font-weight: bold;
+  color: white;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 @media screen and (max-width: 600px) {
 .wp-block-buytiti-buytiti-bloque-categorias {
@@ -183,7 +208,8 @@ margin-top: 10px;
   .imagenind-1,
   .imagenind-2,
   .imagenind-3,
-  .imagenind-4 {
+  .imagenind-4,
+  .imagenind-5 {
     width: 90px;
     height: 90px;
   }
@@ -209,6 +235,9 @@ margin-top: 10px;
   .texto-4{
   font-size: 12px;
   }
+  .texto-5{
+    font-size: 12px;
+    }
 }
 }
 @media screen and (max-width: 900px) {
@@ -230,7 +259,8 @@ margin-top: 10px;
   .imagenind-1,
   .imagenind-2,
   .imagenind-3,
-  .imagenind-4 {
+  .imagenind-4,
+  .imagenind-5 {
     width: 90px;
     height: 90px;
   }
@@ -256,5 +286,8 @@ margin-top: 10px;
   .texto-4{
   font-size: 12px;
   }
+  .texto-5{
+    font-size: 12px;
+    }
 }
 }
